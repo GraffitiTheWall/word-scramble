@@ -17,14 +17,10 @@ function main() {
         time_elem.innerHTML = `You have <b>${time}</b> seconds left.`
     }
     
-    if (sessionStorage.getItem('time') == undefined || Number(sessionStorage.getItem('time')) <= 0) {
+    if (sessionStorage.getItem('time') == undefined || sessionStorage.getItem('time') == NaN || Number(sessionStorage.getItem('time')) <= 0) {
         set_timer()
     } else {
         time_elem.innerHTML = `You have <b>${sessionStorage.getItem('time')}</b> seconds left.`
-    }
-    if (sessionStorage.getItem('time') == NaN) {
-        console.log('not a number.')
-        set_timer()
     }
     let time = parseInt(sessionStorage.getItem('time'))
     function displayTime() {
