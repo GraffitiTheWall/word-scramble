@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .class_holder {
+                display: flex;
+                justify-content: center;
+            }
+            * {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+            }
+            .title {
+                font-size: 50px;
+                font-weight: bold;
+            }
+            .button {
+                border-radius: 8px;
+                background-color: greenyellow;
+            }
+            .score {
+                text-align: left;
+            }
+        </style>
+        <title>Word Scramble</title>
+    </head>
+    <body>
+        <h1 class = 'title'>Word Scramble</h1>
+        <hr>
+        <p class="score" id ='score'></p>
+        <div class = 'class_holder' id = 'class_holder'></div>
+        <p id="hint"></p>
+        <input id = 'text' type = 'textarea' rows="3" cols="4">
+        <button type = 'button' id = 'submit' class="button">submit</button>
+        <button type = 'button' id = 'next' class="button">next</button>
+        <button type="button" id = 'scramble' class='button'>scramble</button>
+        <br>
+        <p id = 'timer'></p>
+        <p id="check"></p>
+        <p id = 'try_again'></p>
+        <script type = 'module' src="statics/script.js"></script>
+
+    </body>
+</html>
