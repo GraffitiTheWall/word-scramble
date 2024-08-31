@@ -153,7 +153,6 @@ function main() {
     }
 
     const intervalID = setInterval(changeColor)
-    set_timer()
 }
 
 
