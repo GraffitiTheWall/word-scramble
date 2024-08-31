@@ -22,7 +22,7 @@ function main() {
     } else {
         time_elem.innerHTML = `You have <b>${sessionStorage.getItem('time')}</b> seconds left.`
     }
-    if (sessoinStorage.getItem('time') == NaN) {
+    if (sessionStorage.getItem('time') == NaN) {
         console.log('not a number.')
         set_timer()
     }
