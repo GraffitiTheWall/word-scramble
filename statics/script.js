@@ -16,7 +16,7 @@ function main() {
         sessionStorage.setItem('time_org', time)
         time_elem.innerHTML = `You have <b>${time}</b> seconds left.`
     }
-    if (sessionStorage.getItem('time') == undefined) {
+    if (sessionStorage.getItem('time') == undefined || sessionStorage.getItem('time') == NaN || Number(sessionStorage.getItem('time')) <= 0) {
         set_timer()
     } else {
         time_elem.innerHTML = `You have <b>${sessionStorage.getItem('time')}</b> seconds left.`
